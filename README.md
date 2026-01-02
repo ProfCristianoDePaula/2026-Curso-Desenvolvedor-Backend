@@ -1,160 +1,185 @@
-Nexus Ecommerce
-Curso Desenvolvedor Backend – .NET 10
+# Nexus ECommerce  
+## Curso Desenvolvedor Backend – From Zero to Arquitetura Profissional
 
-O Nexus Ecommerce é o projeto oficial desenvolvido ao longo do Curso Desenvolvedor Backend, com o objetivo de ensinar, de forma prática e estruturada, a construção de APIs modernas, seguras e escaláveis utilizando .NET 10 e ASP.NET Core.
+Este repositório contém o **projeto oficial do Curso Desenvolvedor Backend**, ministrado por **Prof. Eng. Cristiano de Paula**, e representa muito mais do que um conjunto de códigos:  
+ele materializa **decisões de engenharia**, **padrões arquiteturais** e **práticas profissionais adotadas em sistemas reais de alta escala**.
 
-Este repositório representa um projeto realista, evoluído passo a passo, desde a criação da solution vazia até a implementação de uma arquitetura profissional, seguindo padrões amplamente adotados pelo mercado.
+> Este não é um curso de CRUD.  
+> Aqui não ensinamos apenas a escrever código.  
+> Ensinamos **como pensar como um desenvolvedor backend sênior**.
 
-🎯 Objetivo do Projeto
+---
 
-Ensinar backend de forma progressiva e profissional
+## 🎯 Propósito do Curso
 
-Consolidar boas práticas de arquitetura e organização
+O curso tem como objetivo formar **desenvolvedores backend capazes de sustentar sistemas em produção**, com foco em:
 
-Aplicar padronização de código e versionamento
+- Arquitetura e tomada de decisão técnica  
+- Performance, custo e escalabilidade  
+- Cloud-native backend  
+- Código previsível, mensurável e sustentável  
 
-Trabalhar com testes de API e exposição segura de serviços
+Aqui, **código é apenas o começo**.
 
-Criar uma base sólida para evolução contínua
+---
 
-O foco não é apenas “fazer funcionar”, mas construir algo que valha a pena manter.
+## 👨‍💻 Perfil do Profissional Formado
 
-🧱 Visão Geral da Arquitetura
+Ao final do curso, o aluno terá desenvolvido competências para atuar como:
 
-O projeto adota uma arquitetura em camadas, organizada por responsabilidade:
+- Desenvolvedor Backend Sênior  
+- Tech Lead Backend  
+- Arquiteto de APIs e serviços  
+- Profissional capaz de justificar decisões técnicas com métricas  
 
-NexusEcommerce
-│
-├── NexusEcommerce.Api           → Camada de Apresentação (Web API)
-├── NexusEcommerce.Application   → Regras de Negócio
-├── NexusEcommerce.Domain        → Entidades e Contratos
-└── NexusEcommerce.Infrastructure→ Dados e Integrações
+> O sênior é pago pelo que decide **não fazer**, tanto quanto pelo que faz.
 
-Princípios adotados
+---
 
-Separação clara de responsabilidades
+## 🧱 O Projeto Nexus ECommerce
 
-Baixo acoplamento entre camadas
+O **Nexus ECommerce** é o projeto central do curso.  
+Ele simula a construção de uma **plataforma de e-ECommerce projetada para alta carga**, preparada para:
 
-Código previsível e legível
+- Picos extremos de acesso (ex.: Black Friday)
+- Alta concorrência
+- Integrações externas
+- Evolução contínua da arquitetura
 
-Facilidade de manutenção e evolução
+> O objetivo não é aprender a fazer CRUD.  
+> O objetivo é aprender a **construir um sistema que aguenta a Black Friday**.
 
-🚀 Como o Projeto Será Desenvolvido
+---
 
-O Nexus Ecommerce não nasce pronto. Ele é construído do zero, acompanhando a evolução do curso.
+## 🏗️ Visão Arquitetural
 
-Etapas principais
-1️⃣ Preparação do Ambiente
 
-Instalação do .NET 10
+├── NexusECommerce.Api → Camada de Apresentação (Web APIs)
+├── NexusECommerce.Application → Regras de Negócio
+├── NexusECommerce.Domain → Domínio, Entidades e Contratos
+├── NexusECommerce.Infrastructure → Persistência e Integrações
 
-Configuração do Visual Studio
+O projeto é desenvolvido utilizando uma **arquitetura em camadas**, evoluindo gradualmente para cenários mais avançados.
 
-Git, Postman, Bruno e Cloudflare Tunnel
 
-Padronização inicial com .editorconfig
+### Princípios Arquiteturais
+- Separação clara de responsabilidades  
+- Baixo acoplamento  
+- Decisões orientadas a custo e performance  
+- Arquitetura evolutiva (não engessada)  
 
-2️⃣ Criação da Solution
+---
 
-Solution vazia como ponto de partida
+## 🚀 Como o Projeto é Construído
 
-Criação dos projetos por camada
+O Nexus Commerce **nasce do zero** e evolui ao longo dos módulos do curso.
 
-Definição das dependências corretas
+### 🔹 Módulo 1 – Ambiente e Fundamentos
+- Preparação profissional do ambiente
+- Cloud, versionamento e ferramentas
+- Primeira API funcional
+- Exposição segura de serviços locais
+- Debug e testes reais de API
 
-3️⃣ Primeiro MVP
+### 🔹 Módulo 2 – C# Avançado e Performance
+- Funcionamento interno do .NET
+- IL, JIT e AOT
+- Stack vs Heap
+- Garbage Collector
+- Benchmarking com BenchmarkDotNet
+- Decisões baseadas em métricas
 
-Criação do primeiro endpoint (Health)
+> Sem medição, performance vira opinião.
 
-Validação do pipeline da API
+### 🔹 Módulos Avançados
+Ao longo do curso, o projeto incorpora:
 
-Debug profissional
+- Cache distribuído (Redis)
+- Mensageria (RabbitMQ)
+- Persistência híbrida (SQL + NoSQL)
+- Microsserviços
+- API Gateway
+- Docker e containerização
+- CI/CD
+- Segurança e arquitetura limpa
+- Edge Computing e Cloud
 
-Testes manuais com Postman/Bruno
+---
 
-Exposição segura via Cloudflare Tunnel
+## 🧪 Métrica, Performance e Engenharia
 
-4️⃣ Evolução Funcional
+O curso ensina que:
 
-Introdução de entidades de domínio
+- Código correto não garante eficiência
+- Toda alocação de memória tem custo
+- GC resolve problemas, mas cobra em latência
+- Decisão técnica sem métrica é opinião
 
-Regras de negócio na camada Application
+Ferramentas e práticas utilizadas:
+- BenchmarkDotNet
+- Análise de alocação
+- Leitura de impacto em GC
+- Avaliação de trade-offs reais
 
-Persistência e integrações na Infrastructure
+---
 
-Endpoints reais de negócio
+## 🔐 Cloud e Exposição de Serviços
 
-5️⃣ Consolidação Arquitetural
+Backend moderno **nasce na nuvem**.
 
-Padronização de contratos
+Durante o curso:
+- APIs locais são expostas com **Cloudflare Tunnels**
+- Sem abertura manual de portas
+- Comunicação criptografada
+- Simulação real de integrações externas
 
-Organização de DTOs
+---
 
-Tratamento de exceções
+## 🛠 Tecnologias Utilizadas
 
-Preparação para ambientes (Development / Production)
+- .NET 10
+- ASP.NET Core
+- Visual Studio Community 2026
+- Git e GitHub
+- Docker
+- SQL Server
+- Redis
+- RabbitMQ
+- Cloudflare
+- Azure
+- BenchmarkDotNet
+- Postman / Bruno
 
-Cada etapa é pensada para simular decisões reais de projetos profissionais.
+---
 
-🧪 Testes e Validação
+## 📌 Filosofia do Curso
 
-O curso trabalha com testes de API desde o início, utilizando:
+- Backend sem métrica é chute  
+- Código simples pode ser caro  
+- Produção não perdoa desperdício  
+- Arquitetura é escolha, não moda  
 
-Postman para testes manuais e exploração
+> Backend profissional não escolhe o que funciona.  
+> Escolhe o que **escala**.
 
-Bruno para testes versionados como código
+---
 
-Validação de contratos simples e previsíveis
+## 🧭 Resultado Esperado
 
-A ideia é mostrar que backend sem testes vira gargalo do time.
+Ao final do curso, este repositório representará:
 
-🔐 Exposição Segura de APIs
+- Um projeto backend completo
+- Decisões arquiteturais justificadas
+- Código orientado a escala
+- Uma base sólida para ambientes reais de produção
 
-Durante o curso, as APIs locais são expostas de forma segura utilizando:
+---
 
-Cloudflare Tunnels
+## 📎 Observação Final
 
-Comunicação criptografada
+Este repositório é **educacional**, mas segue **padrões reais de mercado**.  
+Tudo o que é construído aqui foi pensado para **existir em produção**.
 
-Sem abertura manual de portas
+> Se só funciona localmente, não está pronto.  
+> Se não escala, não é profissional.
 
-Ideal para testes externos, webhooks e integrações
-
-Isso aproxima o aluno de cenários reais de desenvolvimento.
-
-🛠 Tecnologias Utilizadas
-
-.NET 10
-
-ASP.NET Core Web API
-
-Visual Studio Community 2026
-
-Git e GitHub
-
-Postman
-
-Bruno
-
-Cloudflare Tunnels
-
-👥 Público-Alvo
-
-Este curso e este repositório são destinados a:
-
-Estudantes de desenvolvimento backend
-
-Desenvolvedores iniciantes em .NET
-
-Profissionais em transição de carreira
-
-Desenvolvedores que desejam organização, arquitetura e padrão, não apenas código funcional
-
-📌 Importante
-
-Este projeto é educacional, mas segue práticas reais de mercado.
-O foco é qualidade, clareza e evolução contínua.
-
-Código é lido mais vezes do que escrito.
-Se só funciona localmente, não está pronto.
